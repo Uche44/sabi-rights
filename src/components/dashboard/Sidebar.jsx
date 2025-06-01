@@ -18,7 +18,10 @@ const Sidebar = () => {
       <Link className="text-gray-700 rounded-[10px] grid place-content-center w-full h-[2rem] mt-4 hover:bg-gray-200">
         Learn
       </Link>
-      <Link className="text-gray-700 rounded-[10px] grid place-content-center w-full h-[2rem] mt-4 hover:bg-gray-200">
+      <Link
+        to="/user/report"
+        className="text-gray-700 rounded-[10px] grid place-content-center w-full h-[2rem] mt-4 hover:bg-gray-200"
+      >
         Report
       </Link>
       <button className="text-gray-700 hover:brightness-120 bg-gray-200 w-full h-[2rem] my-4">

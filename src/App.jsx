@@ -9,6 +9,7 @@ import SetUserProfile from "./pages/SetUserProfile";
 import DashboardLayout from "./layout/DashBoardLayout";
 import UserDashboard from "./pages/dashboard/UserDashboard";
 import NgoDashboard from "./pages/dashboard/NgoDashboard";
+import FileReport from "./pages/dashboard/user/FileReport";
 
 const App = () => {
   return (
@@ -46,7 +47,13 @@ const App = () => {
               <Route
                 path="user"
                 element={<UserDashboard />}
-              />
+              >
+                
+                <Route
+                  path="report"
+                  element={<FileReport />}
+                />
+              </Route>
               <Route
                 path="ngo"
                 element={<NgoDashboard />}
