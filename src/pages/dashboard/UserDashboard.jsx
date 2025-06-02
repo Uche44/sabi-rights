@@ -3,6 +3,7 @@ import RightsTips from "../../components/dashboard/user/RightsTips";
 import Categories from "../../components/dashboard/user/Categories";
 import Sidebar from "../../components/dashboard/Sidebar";
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
 const UserDashboard = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -12,6 +13,7 @@ const UserDashboard = () => {
   return (
     <>
       {isSidebarOpen && <Sidebar />}
+      <Outlet />
 
       <div className="w-full min-h-screen px-4 py-8 flex flex-col items-center bg-gray-100">
         <button
